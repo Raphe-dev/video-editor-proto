@@ -1,0 +1,41 @@
+{
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["plugin:vue/essential", "eslint:recommended"],
+  "rules": {
+    "vue/html-closing-bracket-newline": [
+      "error",
+      {
+        "singleline": "never",
+        "multiline": "never"
+      }
+    ],
+    "vue/html-end-tags": "error",
+    "vue/html-indent": [
+      "error",
+      4
+    ],
+    "vue/no-reserved-component-names": "error",
+    "vue/this-in-template": "error",
+    "vue/multiline-html-element-content-newline": "warn",
+    "vue/mustache-interpolation-spacing": "warn",
+    "vue/no-multi-spaces": "warn",
+    "vue/no-spaces-around-equal-signs-in-attribute": "warn",
+    "vue/eqeqeq": "warn",
+    "vue/no-irregular-whitespace": "warn",
+    "vue/html-quotes": "warn",
+    "vue/no-v-html": "warn",
+    "vue/arrow-spacing": "warn",
+    "vue/comma-dangle": "warn",
+    "vue/key-spacing": "warn",
+    "vue/return-in-computed-property": "off",
+    "no-multiple-empty-lines": [2, {"max":  1}]
+  }
+}

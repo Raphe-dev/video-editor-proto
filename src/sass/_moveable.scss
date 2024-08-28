@@ -1,0 +1,41 @@
+.moveable__default {
+  .moveable-line {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background:  theme('colors.accent') !important;
+    transform-origin: 0px 0.5px;
+  }
+  .moveable-control {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    background: theme('colors.accent') !important;
+    margin-top: -7px;
+    margin-left: -7px;
+    z-index: 10;
+  }
+  .moveable-line.moveable-rotation-line .moveable-control {
+    border-color: theme('colors.accent') !important;
+    background:#fff;
+    cursor: alias;
+  }
+}
+
+.moveable__big {
+  .moveable-line {
+    border-bottom: 2px theme('colors.accent') solid !important;
+    border-right: 2px theme('colors.accent') solid !important;
+    background:  theme('colors.accent') !important;
+  }
+  .moveable-control {
+    background: theme('colors.accent') !important;
+  }
+  .moveable-line.moveable-rotation-line .moveable-control {
+    border-color: theme('colors.accent') !important;
+  }
+
+}

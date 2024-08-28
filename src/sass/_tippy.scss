@@ -1,0 +1,38 @@
+/* purgecss start ignore */
+
+$bg_color: rgba(20,20,20,0.8);
+
+.tippy-tooltip.custom-theme{
+
+  background-color: $bg_color;
+  @apply text-xsm text-white;
+
+}
+.tippy-popper[x-placement^='bottom']
+.tippy-tooltip.custom-theme
+.tippy-arrow {
+  border-bottom: 7px solid $bg_color;
+  transform: scaleX(0.75);
+}
+
+.tippy-popper[x-placement^='top']
+.tippy-tooltip.custom-theme
+.tippy-arrow {
+  border-top: 7px solid $bg_color;
+  transform: scaleX(0.75);
+}
+.tippy-popper[x-placement^='left']
+.tippy-tooltip.custom-theme
+.tippy-arrow {
+  border-left: 7px solid $bg_color;
+  transform: scaleX(0.75);
+}
+
+.tippy-popper[x-placement^='right']
+.tippy-tooltip.custom-theme
+.tippy-arrow {
+  border-right: 7px solid $bg_color;
+  transform: scaleX(0.75);
+}
+
+/* purgecss end ignore */

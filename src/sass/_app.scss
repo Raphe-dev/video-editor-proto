@@ -1,0 +1,4 @@
+.app_content {
+  max-height: calc(100% - 2rem);
+  @apply h-full w-full flex;
+}

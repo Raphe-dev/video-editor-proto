@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import
+//base
+'reset',
+//content
+'body',
+'app',
+'popper',
+'tippy',
+'panel',
+'moveable';

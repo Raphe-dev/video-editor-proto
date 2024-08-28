@@ -1,0 +1,25 @@
+.panel {
+  @apply min-w-32 h-full bg-white shadow-xs z-4 flex flex-col;
+  &__header{
+    &--icon {
+      &:hover:not(.-disabled){
+        @apply cursor-pointer text-white-lightest transform scale-105;
+      }
+
+      &+&{
+        @apply ml-2;
+      }
+
+      &.-disabled {
+        @apply cursor-default opacity-50;
+      }
+    }
+  }
+
+  &__content {
+    @apply text-black px-2 overflow-auto;
+    &.-noPadding {
+      @apply px-0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+body {
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+
+    &-track {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    &-corner {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    &-thumb {
+      background: lighten(#828282, 10%);
+      border-radius: 10px;
+      &:hover {
+        background: #828282;
+      }
+    }
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #C4C4C4;
+    opacity: 1; /* Firefox */
+  }
+}
+
+
+html {
+  @media(min-width: 3000px){
+    font-size: 32px;
+  }
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
